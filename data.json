@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start",
+      "text": "Inizio",
+      "class": "start"
+    },
+    {
+      "id": "node1",
+      "type": "decision",
+      "text": "Condizione",
+      "class": "condition"
+    },
+    {
+      "id": "node2",
+      "type": "process",
+      "text": "Azione 1",
+      "class": "action"
+    },
+    {
+      "id": "node3",
+      "type": "process",
+      "text": "Azione 2",
+      "class": "action"
+    },
+    {
+      "id": "end",
+      "type": "end",
+      "text": "Fine",
+      "class": "end"
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "node1",
+      "text": ""
+    },
+    {
+      "from": "node1",
+      "to": "node2",
+      "text": "Sì"
+    },
+    {
+      "from": "node1",
+      "to": "node3",
+      "text": "No"
+    },
+    {
+      "from": "node2",
+      "to": "end",
+      "text": ""
+    },
+    {
+      "from": "node3",
+      "to": "end",
+      "text": ""
+    }
+  ]
+}
